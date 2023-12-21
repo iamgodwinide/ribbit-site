@@ -1,0 +1,36 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#desktop,
+#mobile {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+
+a {
+    cursor: pointer;
+}
+
+@media screen and (max-width: 1024px) {
+    #desktop {
+        display: none;
+    }
+
+    #mobile {
+        display: block;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    #desktop {
+        display: block;
+    }
+
+    #mobile {
+        display: none;
+    }
+}
